@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pet Shop</title>
+  <!-- Tailwind and daisy ui -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+    
+<!-- google font -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+<style>
+  .adlam-font {
+  font-family: "ADLaM Display", serif;}
+.sora-font {
+  font-family: "Sora", serif;
+}
+</style>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/61b5532f6b.js" crossorigin="anonymous"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'nav-bg': '#FFF9F4',
+          'btn-color':'#FFDC26',
+        }
+      }
+    }
+  }
+</script>
+
+
+</head>
+<body class="adlam-font">
+  <header class=" bg-nav-bg">
+    <!-- Navbar -->
+    <nav class="sora-font md:container mx-auto py-5 flex justify-between px-5 md:px-0">
+      <!-- logo and image -->
+      <div class="flex flex-row items-center space-x-4">
+        <img src="c1-assets/logo-header.png" alt="">
+        <h2 class="text-2xl hidden lg:block">Browse<span class="text-btn-color">4</span>Pets</h2>
+      </div>
+      <div class="flex ">
+        <ul class="flex items-center justify-center space-x-8 text-xl ">
+          <li class="hidden lg:block"><a href="">Find a pet</a></li>
+          <li class="hidden lg:block"><a href="">Breeds</a></li>
+          <li class="hidden lg:block"><a href="">Contact us</a></li>
+        </ul>
+        
+      </div>
+      <div class="space-x-3 text-xl flex items-center">
+        <i class="fa-regular fa-bell text-2xl hidden lg:block"></i>
+        <i class="fa-solid fa-magnifying-glass text-2xl hidden lg:block"></i>
+        <button class="btn btn-outline border-btn-color hidden lg:block">Login</button>
+        <button class="btn bg-btn-color hidden lg:block">Register</button>
+        <i class="fa-solid fa-bars block text-3xl lg:hidden"></i>
+      </div>
+
+    </nav>
+    <hr class="border-black md:container mx-auto  lg:hidden">
+    <!-- Banner -->
+    <section></section>
+  </header>
+  <main class="class="md:container mx-auto"">
+
+  </main>
+  <footer>
+
+  </footer>
+</body>
+</html>
